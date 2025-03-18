@@ -1,0 +1,69 @@
+/* Estilos base para la presentación */
+html, body, .App {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Estilos para Reveal.js */
+.reveal {
+  font-family: var(--body-font);
+  font-size: var(--body-size);
+  color: var(--text-color);
+}
+
+.reveal .slides section {
+  height: 100%;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  font-size: var(--heading-size);
+}
+
+.reveal strong {
+  color: var(--accent-color);
+}
+
+.reveal a {
+  color: var(--secondary-color);
+}
+
+.reveal code {
+  font-family: var(--code-font);
+}
+
+.reveal blockquote {
+  border-left: 4px solid var(--secondary-color);
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.5em 1em;
+}
+
+/* Asegurarse que las imágenes estén contenidas */
+.reveal img {
+  max-width: 90%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.presentation-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+} 

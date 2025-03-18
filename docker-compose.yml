@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  presentation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react-presentation
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    # En producción, quitar las líneas de volumes y environment 
