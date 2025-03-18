@@ -20,8 +20,8 @@ Este proyecto es una presentación web interactiva creada con React y Reveal.js,
 
 1. Clona este repositorio:
    ```bash
-   git clone <url-del-repositorio>
-   cd <nombre-del-directorio>
+   git clone https://github.com/coagente/plead_deck.git
+   cd plead_deck
    ```
 
 2. Construye y ejecuta los contenedores:
@@ -37,6 +37,29 @@ Este proyecto es una presentación web interactiva creada con React y Reveal.js,
 4. Para detener los contenedores:
    ```bash
    docker-compose down
+   ```
+
+### Usando Docker directamente
+
+1. Construye la imagen Docker:
+   ```bash
+   docker build -t plead-deck .
+   ```
+
+2. Ejecuta el contenedor:
+   ```bash
+   docker run -p 3000:80 --name plead-deck-container plead-deck
+   ```
+
+3. Accede a la presentación en tu navegador:
+   ```
+   http://localhost:3000
+   ```
+
+4. Para detener y eliminar el contenedor:
+   ```bash
+   docker stop plead-deck-container
+   docker rm plead-deck-container
    ```
 
 ### Desarrollo local (sin Docker)
@@ -88,4 +111,4 @@ Para modificar el contenido de la presentación, edita el archivo `src/component
 
 ## Licencia
 
-MIT 
+Apache License 2.0 - Revisa el archivo [LICENSE](LICENSE) para más detalles. 
